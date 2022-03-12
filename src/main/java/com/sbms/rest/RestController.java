@@ -11,6 +11,7 @@ public class RestController {
 
 	@GetMapping("/welcome")
 	public String getMsg() {
+		System.out.println("RestController.getMsg()");
 		LocalDateTime ldt = LocalDateTime.now();
 		int hour = ldt.getHour();
 		if (hour < 12)
