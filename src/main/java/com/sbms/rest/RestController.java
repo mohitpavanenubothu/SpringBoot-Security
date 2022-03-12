@@ -26,7 +26,7 @@ public class RestController {
 
 	@GetMapping("/wish")
 	public ResponseEntity<String> wishmsg() {
-		String msg = "Welcome to Spring Boot Security with Dockers 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";
+		String msg = "Welcome to Spring Boot Security with Dockers token:::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";
 		return new ResponseEntity<String>(msg, HttpStatus.OK);
 	}
 
