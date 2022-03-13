@@ -1,12 +1,14 @@
-package com.sbms.rest;
+package com.sbms.controller;
 
 import java.time.LocalDateTime;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @org.springframework.web.bind.annotation.RestController
+@RequestMapping("/")
 public class RestController {
 
 	@GetMapping("/welcome")
@@ -26,7 +28,7 @@ public class RestController {
 
 	@GetMapping("/wish")
 	public ResponseEntity<String> wishmsg() {
-		String msg = "Welcome to Spring Boot Security with Dockers token:::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";
+		String msg = "Welcome to Spring Boot Security with Dockers";
 		return new ResponseEntity<String>(msg, HttpStatus.OK);
 	}
 
